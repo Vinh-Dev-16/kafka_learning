@@ -1,0 +1,10 @@
+name: kafka-deep-dive-learning
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:5178:80"
+    restart: unless-stopped
